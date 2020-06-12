@@ -11,15 +11,13 @@ import Foundation
 protocol Synchronizable {
     associatedtype Element
     
-    /// <#Description#>
+    /// Get read-write access to the synchronized resource.
     ///
-    /// - Parameter block: <#block description#>
-    func update(block: inout (Element) -> Void)
+    /// - note: The write lock is held during the whole execution of the closure.
+    func update(block: (inout Element) -> Void)
     
-    /// <#Description#>
+    /// Get resource.
     ///
-    /// - Parameter block: <#block description#>
-    ///
-    /// - Returns:
+    /// - Returns: Resource.
     func get() -> Element
 }

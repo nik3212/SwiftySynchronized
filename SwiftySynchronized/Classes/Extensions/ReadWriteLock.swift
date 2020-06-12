@@ -9,21 +9,18 @@
 import Foundation
 
 /// A read-write thread lock.
-final class ReadWriteLock {
+public final class ReadWriteLock {
     
     // MARK: Private Properties
     
     /// RWLock.
     private var lock = pthread_rwlock_t()
     
-    /// Attributes.
-    private var attr = pthread_rwlockattr_t()
-    
     // MARK: Initialization
     
     /// Create a new `ReadWriteLock` instance.
     init() {
-        pthread_rwlock_init(&lock, &attr)
+        pthread_rwlock_init(&lock, nil)
     }
     
     deinit {
@@ -33,13 +30,13 @@ final class ReadWriteLock {
 
 // MARK: Locable
 extension ReadWriteLock: Locable {
-    func read<T>(_ block: () throws -> T) rethrows -> T {
+    public func read<T>(_ block: () throws -> T) rethrows -> T {
         pthread_rwlock_rdlock(&lock)
         defer { pthread_rwlock_unlock(&lock) }
         return try block()
     }
     
-    func write<T>(_ block: () throws -> T) rethrows -> T {
+    public func write<T>(_ block: () throws -> T) rethrows -> T {
         pthread_rwlock_wrlock(&lock)
         defer { pthread_rwlock_unlock(&lock) }
         return try block()

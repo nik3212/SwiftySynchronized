@@ -8,14 +8,15 @@
 
 import Foundation
 
+/// Holds a value, and makes sure that it is only accessed while a lock is held.
 public final class Synchronized<T> {
     
     // MARK: Private Properties
     
-    /// <#Description#>
+    /// Lock type.
     private var lock: Locable
     
-    /// <#Description#>
+    /// Value.
     private var value: T
     
     // MARK: Initialization
@@ -23,8 +24,8 @@ public final class Synchronized<T> {
     /// Create a new `Synchronized` instance.
     ///
     /// - Parameters:
-    ///   - value: <#value description#>
-    ///   - lock: <#lock description#>
+    ///   - value: Value.
+    ///   - lock: Lets you choose the type of lock you want.
     init(value: T, lock: Locable) {
         self.lock = lock
         self.value = value
@@ -33,9 +34,9 @@ public final class Synchronized<T> {
 
 // MARK: Synchronizable
 extension Synchronized: Synchronizable {
-    func update(block: inout (T) -> Void) {
+    func update(block: (inout T) -> Void) {
         lock.write {
-            block(value)
+            block(&value)
         }
     }
     

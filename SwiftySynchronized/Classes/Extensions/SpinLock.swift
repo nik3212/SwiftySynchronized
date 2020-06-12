@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class SpinLock {
+public final class SpinLock {
     // MARK: Private Properties
     
     /// Spin lock object.
@@ -17,13 +17,13 @@ final class SpinLock {
 
 // MARK: Locable
 extension SpinLock: Locable {
-    func read<T>(_ block: () throws -> T) rethrows -> T {
+    public func read<T>(_ block: () throws -> T) rethrows -> T {
         OSSpinLockLock(&lock)
         defer { OSSpinLockUnlock(&lock) }
         return try block()
     }
     
-    func write<T>(_ block: () throws -> T) rethrows -> T {
+    public func write<T>(_ block: () throws -> T) rethrows -> T {
         OSSpinLockLock(&lock)
         defer { OSSpinLockUnlock(&lock) }
         return try block()

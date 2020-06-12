@@ -19,6 +19,9 @@
 		5AAE386424784DC300C9A0E0 /* ReadWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE386324784DC300C9A0E0 /* ReadWriteLock.swift */; };
 		5AAE386624784FE400C9A0E0 /* RWQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE386524784FE400C9A0E0 /* RWQueue.swift */; };
 		5AAE3868247850A500C9A0E0 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE3867247850A500C9A0E0 /* DispatchQueue.swift */; };
+		5AC10D1A248A810D00132EB4 /* MutexLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC10D19248A810D00132EB4 /* MutexLock.swift */; };
+		5AC10D1C248A8B6E00132EB4 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC10D1B248A8B6E00132EB4 /* PerformanceTests.swift */; };
+		5AC10D1E248A92D500132EB4 /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC10D1D248A92D500132EB4 /* UnfairLock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		5AAE386324784DC300C9A0E0 /* ReadWriteLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadWriteLock.swift; sourceTree = "<group>"; };
 		5AAE386524784FE400C9A0E0 /* RWQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWQueue.swift; sourceTree = "<group>"; };
 		5AAE3867247850A500C9A0E0 /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		5AC10D19248A810D00132EB4 /* MutexLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutexLock.swift; sourceTree = "<group>"; };
+		5AC10D1B248A8B6E00132EB4 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
+		5AC10D1D248A92D500132EB4 /* UnfairLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfairLock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,10 +135,12 @@
 			children = (
 				5AAE3867247850A500C9A0E0 /* DispatchQueue.swift */,
 				5AAE38592478476C00C9A0E0 /* DispatchSemaphore+.swift */,
+				5AC10D19248A810D00132EB4 /* MutexLock.swift */,
 				5AAE385F24784CB100C9A0E0 /* NSLock+.swift */,
 				5AAE386324784DC300C9A0E0 /* ReadWriteLock.swift */,
 				5AAE386524784FE400C9A0E0 /* RWQueue.swift */,
 				5AAE386124784D4200C9A0E0 /* SpinLock.swift */,
+				5AC10D1D248A92D500132EB4 /* UnfairLock.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -141,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				5A149298246EF20A006E3DE7 /* SwiftySynchronizedTests.swift */,
+				5AC10D1B248A8B6E00132EB4 /* PerformanceTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -260,7 +269,9 @@
 				5AAE386424784DC300C9A0E0 /* ReadWriteLock.swift in Sources */,
 				5A1492A9246EF390006E3DE7 /* Locable.swift in Sources */,
 				5AAE386024784CB100C9A0E0 /* NSLock+.swift in Sources */,
+				5AC10D1A248A810D00132EB4 /* MutexLock.swift in Sources */,
 				5AAE385A2478476C00C9A0E0 /* DispatchSemaphore+.swift in Sources */,
+				5AC10D1E248A92D500132EB4 /* UnfairLock.swift in Sources */,
 				5AAE386624784FE400C9A0E0 /* RWQueue.swift in Sources */,
 				5A1492AB246EF3B9006E3DE7 /* Synchronizable.swift in Sources */,
 				5AAE3868247850A500C9A0E0 /* DispatchQueue.swift in Sources */,
@@ -271,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC10D1C248A8B6E00132EB4 /* PerformanceTests.swift in Sources */,
 				5A149299246EF20A006E3DE7 /* SwiftySynchronizedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
