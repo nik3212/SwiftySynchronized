@@ -8,7 +8,9 @@
 <a href="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
 <a href="https://img.shields.io/github/repo-size/nik3212/SwiftySynchronized"><img src="https://img.shields.io/github/repo-size/nik3212/SwiftySynchronized"></a>
 <a href="https://img.shields.io/badge/Language-Swift-orange.svg"><img src="https://img.shields.io/badge/Language-Swift-orange.svg"></a>
-
+<a href="https://img.shields.io/cocoapods/v/SwiftySynchronized.svg"><img src="https://img.shields.io/cocoapods/v/SwiftySynchronized.svg"></a>
+<a href="https://img.shields.io/cocoapods/p/SwiftySynchronized.svg?style=flat"><img src="https://img.shields.io/cocoapods/p/SwiftySynchronized.svg?style=flat"></a>
+ 
 A Swift generic wrapper type to help enforce thread-safe usage of stored properties.
 
 - [Features](#features)
@@ -52,6 +54,14 @@ struct Example {
 ```
 
 ## Installation
+
+### CocoaPods
+
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+pod 'SwiftySynchronized', '~> 0.0.1'
+```
 
 ### Carthage
 
