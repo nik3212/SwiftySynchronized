@@ -12,11 +12,11 @@ public final class SpinLock {
     // MARK: Private Properties
     
     /// Spin lock object.
-    private var lock = OS_SPINLOCK_INIT
+    private var lock: Int32
     
     // MARK: Initialization
     public init() {
-        
+        lock = OS_SPINLOCK_INIT
     }
 }
 

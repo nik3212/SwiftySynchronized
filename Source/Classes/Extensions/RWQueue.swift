@@ -10,11 +10,11 @@ import Foundation
 
 public final class RWQueue {
     // MARK: Private Properties
-    private var queue = DispatchQueue(label: "com.synchronized.rwqueue", qos: .userInitiated, attributes: .concurrent)
+    private var queue: DispatchQueue
     
     // MARK: Initialization
     public init() {
-        
+        queue = DispatchQueue(label: "com.synchronized.rwqueue", qos: .userInitiated, attributes: .concurrent)
     }
 }
 
