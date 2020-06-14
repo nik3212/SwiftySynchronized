@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal protocol Locable {
+public protocol Locable {
     /// Executes a closure with a read lock.
     ///
     /// - Parameter block: The block to execute while holding the lock.

@@ -11,6 +11,11 @@ import Foundation
 public final class RWQueue {
     // MARK: Private Properties
     private var queue = DispatchQueue(label: "com.synchronized.rwqueue", qos: .userInitiated, attributes: .concurrent)
+    
+    // MARK: Initialization
+    public init() {
+        
+    }
 }
 
 // MARK: Locable

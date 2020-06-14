@@ -19,7 +19,7 @@ public final class MutexLock {
     /// Create a new `Mutex` instance.
     ///
     /// - Parameter recursive:
-    init(recursive: Bool = true) {
+    public init(recursive: Bool = true) {
         var attr = pthread_mutexattr_t()
         pthread_mutexattr_settype(&attr, recursive ? PTHREAD_MUTEX_RECURSIVE : PTHREAD_MUTEX_NORMAL)
         pthread_mutex_init(&mutex, nil)

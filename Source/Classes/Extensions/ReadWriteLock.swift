@@ -19,7 +19,7 @@ public final class ReadWriteLock {
     // MARK: Initialization
     
     /// Create a new `ReadWriteLock` instance.
-    init() {
+    public init() {
         pthread_rwlock_init(&lock, nil)
     }
     

@@ -13,6 +13,11 @@ public final class SpinLock {
     
     /// Spin lock object.
     private var lock = OS_SPINLOCK_INIT
+    
+    // MARK: Initialization
+    public init() {
+        
+    }
 }
 
 // MARK: Locable

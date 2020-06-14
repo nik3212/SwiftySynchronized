@@ -26,7 +26,7 @@ public final class Synchronized<T> {
     /// - Parameters:
     ///   - value: Value.
     ///   - lock: Lets you choose the type of lock you want.
-    init(value: T, lock: Locable) {
+    public init(value: T, lock: Locable) {
         self.lock = lock
         self.value = value
     }
@@ -34,13 +34,13 @@ public final class Synchronized<T> {
 
 // MARK: Synchronizable
 extension Synchronized: Synchronizable {
-    func update(block: (inout T) -> Void) {
+    public func update(block: (inout T) -> Void) {
         lock.write {
             block(&value)
         }
     }
     
-    func get() -> T {
+    public func get() -> T {
         return lock.read {
             return value
         }
