@@ -7,67 +7,165 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A149294246EF20A006E3DE7 /* SwiftySynchronized.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A14928A246EF20A006E3DE7 /* SwiftySynchronized.framework */; };
-		5A149299246EF20A006E3DE7 /* SwiftySynchronizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A149298246EF20A006E3DE7 /* SwiftySynchronizedTests.swift */; };
-		5A14929B246EF20A006E3DE7 /* SwiftySynchronized.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A14928D246EF20A006E3DE7 /* SwiftySynchronized.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A1492A5246EF25A006E3DE7 /* Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1492A4246EF25A006E3DE7 /* Synchronized.swift */; };
-		5A1492A9246EF390006E3DE7 /* Locable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1492A8246EF390006E3DE7 /* Locable.swift */; };
-		5A1492AB246EF3B9006E3DE7 /* Synchronizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1492AA246EF3B9006E3DE7 /* Synchronizable.swift */; };
-		5AAE385A2478476C00C9A0E0 /* DispatchSemaphore+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE38592478476C00C9A0E0 /* DispatchSemaphore+.swift */; };
-		5AAE386024784CB100C9A0E0 /* NSLock+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE385F24784CB100C9A0E0 /* NSLock+.swift */; };
-		5AAE386224784D4200C9A0E0 /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE386124784D4200C9A0E0 /* SpinLock.swift */; };
-		5AAE386424784DC300C9A0E0 /* ReadWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE386324784DC300C9A0E0 /* ReadWriteLock.swift */; };
-		5AAE386624784FE400C9A0E0 /* RWQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE386524784FE400C9A0E0 /* RWQueue.swift */; };
-		5AAE3868247850A500C9A0E0 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE3867247850A500C9A0E0 /* DispatchQueue.swift */; };
-		5AC10D1A248A810D00132EB4 /* MutexLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC10D19248A810D00132EB4 /* MutexLock.swift */; };
-		5AC10D1C248A8B6E00132EB4 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC10D1B248A8B6E00132EB4 /* PerformanceTests.swift */; };
-		5AC10D1E248A92D500132EB4 /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC10D1D248A92D500132EB4 /* UnfairLock.swift */; };
+		5A59DBB22496428E00202E10 /* SwiftySynchronized.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A59DBA92496428E00202E10 /* SwiftySynchronized.framework */; };
+		5A59DBCE249642AB00202E10 /* SwiftySynchronized.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A59DBC5249642AB00202E10 /* SwiftySynchronized.framework */; };
+		5A59DBEA249642C000202E10 /* SwiftySynchronized.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A59DBE1249642BF00202E10 /* SwiftySynchronized.framework */; };
+		5A59DC1B2496433400202E10 /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC082496433400202E10 /* UnfairLock.swift */; };
+		5A59DC1C2496433400202E10 /* ReadWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC092496433400202E10 /* ReadWriteLock.swift */; };
+		5A59DC1D2496433400202E10 /* NSLock+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0A2496433400202E10 /* NSLock+.swift */; };
+		5A59DC1E2496433400202E10 /* MutexLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0B2496433400202E10 /* MutexLock.swift */; };
+		5A59DC1F2496433400202E10 /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0C2496433400202E10 /* SpinLock.swift */; };
+		5A59DC202496433400202E10 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0D2496433400202E10 /* DispatchQueue.swift */; };
+		5A59DC212496433400202E10 /* RWQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0E2496433400202E10 /* RWQueue.swift */; };
+		5A59DC222496433400202E10 /* DispatchSemaphore+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0F2496433400202E10 /* DispatchSemaphore+.swift */; };
+		5A59DC232496433400202E10 /* Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC102496433400202E10 /* Synchronized.swift */; };
+		5A59DC242496433400202E10 /* Locable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC122496433400202E10 /* Locable.swift */; };
+		5A59DC252496433400202E10 /* Synchronizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC132496433400202E10 /* Synchronizable.swift */; };
+		5A59DC262496433400202E10 /* SwiftySynchronized.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A59DC142496433400202E10 /* SwiftySynchronized.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A59DC2B249645C600202E10 /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC082496433400202E10 /* UnfairLock.swift */; };
+		5A59DC2C249645C600202E10 /* ReadWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC092496433400202E10 /* ReadWriteLock.swift */; };
+		5A59DC2D249645C600202E10 /* NSLock+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0A2496433400202E10 /* NSLock+.swift */; };
+		5A59DC2E249645C600202E10 /* MutexLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0B2496433400202E10 /* MutexLock.swift */; };
+		5A59DC2F249645C600202E10 /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0C2496433400202E10 /* SpinLock.swift */; };
+		5A59DC30249645C600202E10 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0D2496433400202E10 /* DispatchQueue.swift */; };
+		5A59DC31249645C600202E10 /* RWQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0E2496433400202E10 /* RWQueue.swift */; };
+		5A59DC32249645C600202E10 /* DispatchSemaphore+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0F2496433400202E10 /* DispatchSemaphore+.swift */; };
+		5A59DC33249645C600202E10 /* Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC102496433400202E10 /* Synchronized.swift */; };
+		5A59DC34249645C600202E10 /* Locable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC122496433400202E10 /* Locable.swift */; };
+		5A59DC35249645C600202E10 /* Synchronizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC132496433400202E10 /* Synchronizable.swift */; };
+		5A59DC36249645CC00202E10 /* SwiftySynchronized.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A59DC142496433400202E10 /* SwiftySynchronized.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A59DC372496467800202E10 /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC082496433400202E10 /* UnfairLock.swift */; };
+		5A59DC382496467800202E10 /* ReadWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC092496433400202E10 /* ReadWriteLock.swift */; };
+		5A59DC392496467800202E10 /* NSLock+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0A2496433400202E10 /* NSLock+.swift */; };
+		5A59DC3A2496467800202E10 /* MutexLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0B2496433400202E10 /* MutexLock.swift */; };
+		5A59DC3B2496467800202E10 /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0C2496433400202E10 /* SpinLock.swift */; };
+		5A59DC3C2496467800202E10 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0D2496433400202E10 /* DispatchQueue.swift */; };
+		5A59DC3D2496467800202E10 /* RWQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0E2496433400202E10 /* RWQueue.swift */; };
+		5A59DC3E2496467800202E10 /* DispatchSemaphore+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0F2496433400202E10 /* DispatchSemaphore+.swift */; };
+		5A59DC3F2496467800202E10 /* Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC102496433400202E10 /* Synchronized.swift */; };
+		5A59DC402496467800202E10 /* Locable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC122496433400202E10 /* Locable.swift */; };
+		5A59DC412496467800202E10 /* Synchronizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC132496433400202E10 /* Synchronizable.swift */; };
+		5A59DC422496467D00202E10 /* SwiftySynchronized.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A59DC142496433400202E10 /* SwiftySynchronized.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A59DC43249646C200202E10 /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC082496433400202E10 /* UnfairLock.swift */; };
+		5A59DC44249646C200202E10 /* ReadWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC092496433400202E10 /* ReadWriteLock.swift */; };
+		5A59DC45249646C200202E10 /* NSLock+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0A2496433400202E10 /* NSLock+.swift */; };
+		5A59DC46249646C200202E10 /* MutexLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0B2496433400202E10 /* MutexLock.swift */; };
+		5A59DC47249646C200202E10 /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0C2496433400202E10 /* SpinLock.swift */; };
+		5A59DC48249646C200202E10 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0D2496433400202E10 /* DispatchQueue.swift */; };
+		5A59DC49249646C200202E10 /* RWQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0E2496433400202E10 /* RWQueue.swift */; };
+		5A59DC4A249646C200202E10 /* DispatchSemaphore+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC0F2496433400202E10 /* DispatchSemaphore+.swift */; };
+		5A59DC4B249646C200202E10 /* Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC102496433400202E10 /* Synchronized.swift */; };
+		5A59DC4C249646C200202E10 /* Locable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC122496433400202E10 /* Locable.swift */; };
+		5A59DC4D249646C200202E10 /* Synchronizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC132496433400202E10 /* Synchronizable.swift */; };
+		5A59DC4E249646C700202E10 /* SwiftySynchronized.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A59DC142496433400202E10 /* SwiftySynchronized.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A59DC4F249647B300202E10 /* SwiftySynchronizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC172496433400202E10 /* SwiftySynchronizedTests.swift */; };
+		5A59DC50249647B300202E10 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC192496433400202E10 /* PerformanceTests.swift */; };
+		5A59DC51249647BD00202E10 /* SwiftySynchronizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC172496433400202E10 /* SwiftySynchronizedTests.swift */; };
+		5A59DC52249647BD00202E10 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC192496433400202E10 /* PerformanceTests.swift */; };
+		5A59DC53249647C400202E10 /* SwiftySynchronizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC172496433400202E10 /* SwiftySynchronizedTests.swift */; };
+		5A59DC54249647C400202E10 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59DC192496433400202E10 /* PerformanceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5A149295246EF20A006E3DE7 /* PBXContainerItemProxy */ = {
+		5A59DBB32496428E00202E10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5A149281246EF209006E3DE7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5A149289246EF209006E3DE7;
-			remoteInfo = SwiftySynchronized;
+			remoteGlobalIDString = 5A59DBA82496428E00202E10;
+			remoteInfo = "SwiftySynchronized iOS";
+		};
+		5A59DBCF249642AB00202E10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A149281246EF209006E3DE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A59DBC4249642AB00202E10;
+			remoteInfo = "SwiftySynchronized macOS";
+		};
+		5A59DBEB249642C000202E10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A149281246EF209006E3DE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A59DBE0249642BF00202E10;
+			remoteInfo = "SwiftySynchronized tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5A14928A246EF20A006E3DE7 /* SwiftySynchronized.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftySynchronized.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A14928D246EF20A006E3DE7 /* SwiftySynchronized.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftySynchronized.h; sourceTree = "<group>"; };
-		5A14928E246EF20A006E3DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A149293246EF20A006E3DE7 /* SwiftySynchronizedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftySynchronizedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A149298246EF20A006E3DE7 /* SwiftySynchronizedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftySynchronizedTests.swift; path = ../SwiftySynchronizedTests.swift; sourceTree = "<group>"; };
-		5A14929A246EF20A006E3DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A1492A4246EF25A006E3DE7 /* Synchronized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synchronized.swift; sourceTree = "<group>"; };
-		5A1492A8246EF390006E3DE7 /* Locable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locable.swift; sourceTree = "<group>"; };
-		5A1492AA246EF3B9006E3DE7 /* Synchronizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synchronizable.swift; sourceTree = "<group>"; };
-		5AAE38592478476C00C9A0E0 /* DispatchSemaphore+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchSemaphore+.swift"; sourceTree = "<group>"; };
-		5AAE385F24784CB100C9A0E0 /* NSLock+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLock+.swift"; sourceTree = "<group>"; };
-		5AAE386124784D4200C9A0E0 /* SpinLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinLock.swift; sourceTree = "<group>"; };
-		5AAE386324784DC300C9A0E0 /* ReadWriteLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadWriteLock.swift; sourceTree = "<group>"; };
-		5AAE386524784FE400C9A0E0 /* RWQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWQueue.swift; sourceTree = "<group>"; };
-		5AAE3867247850A500C9A0E0 /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
-		5AC10D19248A810D00132EB4 /* MutexLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutexLock.swift; sourceTree = "<group>"; };
-		5AC10D1B248A8B6E00132EB4 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
-		5AC10D1D248A92D500132EB4 /* UnfairLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfairLock.swift; sourceTree = "<group>"; };
+		5A59DBA92496428E00202E10 /* SwiftySynchronized.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftySynchronized.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A59DBB12496428E00202E10 /* SwiftySynchronized iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftySynchronized iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A59DBC5249642AB00202E10 /* SwiftySynchronized.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftySynchronized.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A59DBCD249642AB00202E10 /* SwiftySynchronized macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftySynchronized macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A59DBE1249642BF00202E10 /* SwiftySynchronized.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftySynchronized.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A59DBE9249642C000202E10 /* SwiftySynchronized tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftySynchronized tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A59DBFD249642CF00202E10 /* SwiftySynchronized.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftySynchronized.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A59DC082496433400202E10 /* UnfairLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnfairLock.swift; sourceTree = "<group>"; };
+		5A59DC092496433400202E10 /* ReadWriteLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadWriteLock.swift; sourceTree = "<group>"; };
+		5A59DC0A2496433400202E10 /* NSLock+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLock+.swift"; sourceTree = "<group>"; };
+		5A59DC0B2496433400202E10 /* MutexLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutexLock.swift; sourceTree = "<group>"; };
+		5A59DC0C2496433400202E10 /* SpinLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinLock.swift; sourceTree = "<group>"; };
+		5A59DC0D2496433400202E10 /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		5A59DC0E2496433400202E10 /* RWQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWQueue.swift; sourceTree = "<group>"; };
+		5A59DC0F2496433400202E10 /* DispatchSemaphore+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchSemaphore+.swift"; sourceTree = "<group>"; };
+		5A59DC102496433400202E10 /* Synchronized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Synchronized.swift; sourceTree = "<group>"; };
+		5A59DC122496433400202E10 /* Locable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locable.swift; sourceTree = "<group>"; };
+		5A59DC132496433400202E10 /* Synchronizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Synchronizable.swift; sourceTree = "<group>"; };
+		5A59DC142496433400202E10 /* SwiftySynchronized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftySynchronized.h; sourceTree = "<group>"; };
+		5A59DC152496433400202E10 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A59DC172496433400202E10 /* SwiftySynchronizedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftySynchronizedTests.swift; sourceTree = "<group>"; };
+		5A59DC192496433400202E10 /* PerformanceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
+		5A59DC1A2496433400202E10 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5A149287246EF209006E3DE7 /* Frameworks */ = {
+		5A59DBA62496428E00202E10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A149290246EF20A006E3DE7 /* Frameworks */ = {
+		5A59DBAE2496428E00202E10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A149294246EF20A006E3DE7 /* SwiftySynchronized.framework in Frameworks */,
+				5A59DBB22496428E00202E10 /* SwiftySynchronized.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBC2249642AB00202E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBCA249642AB00202E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A59DBCE249642AB00202E10 /* SwiftySynchronized.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBDE249642BF00202E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBE6249642C000202E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A59DBEA249642C000202E10 /* SwiftySynchronized.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBFA249642CF00202E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +175,8 @@
 		5A149280246EF209006E3DE7 = {
 			isa = PBXGroup;
 			children = (
-				5A14928C246EF20A006E3DE7 /* SwiftySynchronized */,
-				5A149297246EF20A006E3DE7 /* SwiftySynchronizedTests */,
+				5A59DC052496433400202E10 /* Source */,
+				5A59DC162496433400202E10 /* Tests */,
 				5A14928B246EF20A006E3DE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,70 +184,75 @@
 		5A14928B246EF20A006E3DE7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A14928A246EF20A006E3DE7 /* SwiftySynchronized.framework */,
-				5A149293246EF20A006E3DE7 /* SwiftySynchronizedTests.xctest */,
+				5A59DBA92496428E00202E10 /* SwiftySynchronized.framework */,
+				5A59DBB12496428E00202E10 /* SwiftySynchronized iOSTests.xctest */,
+				5A59DBC5249642AB00202E10 /* SwiftySynchronized.framework */,
+				5A59DBCD249642AB00202E10 /* SwiftySynchronized macOSTests.xctest */,
+				5A59DBE1249642BF00202E10 /* SwiftySynchronized.framework */,
+				5A59DBE9249642C000202E10 /* SwiftySynchronized tvOSTests.xctest */,
+				5A59DBFD249642CF00202E10 /* SwiftySynchronized.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5A14928C246EF20A006E3DE7 /* SwiftySynchronized */ = {
+		5A59DC052496433400202E10 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				5A1492A6246EF31E006E3DE7 /* Classes */,
-				5A14928D246EF20A006E3DE7 /* SwiftySynchronized.h */,
-				5A14928E246EF20A006E3DE7 /* Info.plist */,
+				5A59DC062496433400202E10 /* Classes */,
+				5A59DC142496433400202E10 /* SwiftySynchronized.h */,
+				5A59DC152496433400202E10 /* Info.plist */,
 			);
-			path = SwiftySynchronized;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		5A149297246EF20A006E3DE7 /* SwiftySynchronizedTests */ = {
+		5A59DC062496433400202E10 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5AAE385C247847D200C9A0E0 /* UnitTests */,
-				5A14929A246EF20A006E3DE7 /* Info.plist */,
-			);
-			path = SwiftySynchronizedTests;
-			sourceTree = "<group>";
-		};
-		5A1492A6246EF31E006E3DE7 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				5AAE38582478473400C9A0E0 /* Extensions */,
-				5A1492A7246EF38A006E3DE7 /* Protocols */,
-				5A1492A4246EF25A006E3DE7 /* Synchronized.swift */,
+				5A59DC072496433400202E10 /* Extensions */,
+				5A59DC102496433400202E10 /* Synchronized.swift */,
+				5A59DC112496433400202E10 /* Protocols */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		5A1492A7246EF38A006E3DE7 /* Protocols */ = {
+		5A59DC072496433400202E10 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5A1492A8246EF390006E3DE7 /* Locable.swift */,
-				5A1492AA246EF3B9006E3DE7 /* Synchronizable.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		5AAE38582478473400C9A0E0 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				5AAE3867247850A500C9A0E0 /* DispatchQueue.swift */,
-				5AAE38592478476C00C9A0E0 /* DispatchSemaphore+.swift */,
-				5AC10D19248A810D00132EB4 /* MutexLock.swift */,
-				5AAE385F24784CB100C9A0E0 /* NSLock+.swift */,
-				5AAE386324784DC300C9A0E0 /* ReadWriteLock.swift */,
-				5AAE386524784FE400C9A0E0 /* RWQueue.swift */,
-				5AAE386124784D4200C9A0E0 /* SpinLock.swift */,
-				5AC10D1D248A92D500132EB4 /* UnfairLock.swift */,
+				5A59DC082496433400202E10 /* UnfairLock.swift */,
+				5A59DC092496433400202E10 /* ReadWriteLock.swift */,
+				5A59DC0A2496433400202E10 /* NSLock+.swift */,
+				5A59DC0B2496433400202E10 /* MutexLock.swift */,
+				5A59DC0C2496433400202E10 /* SpinLock.swift */,
+				5A59DC0D2496433400202E10 /* DispatchQueue.swift */,
+				5A59DC0E2496433400202E10 /* RWQueue.swift */,
+				5A59DC0F2496433400202E10 /* DispatchSemaphore+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		5AAE385C247847D200C9A0E0 /* UnitTests */ = {
+		5A59DC112496433400202E10 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				5A149298246EF20A006E3DE7 /* SwiftySynchronizedTests.swift */,
-				5AC10D1B248A8B6E00132EB4 /* PerformanceTests.swift */,
+				5A59DC122496433400202E10 /* Locable.swift */,
+				5A59DC132496433400202E10 /* Synchronizable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5A59DC162496433400202E10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5A59DC172496433400202E10 /* SwiftySynchronizedTests.swift */,
+				5A59DC182496433400202E10 /* UnitTests */,
+				5A59DC1A2496433400202E10 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		5A59DC182496433400202E10 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A59DC192496433400202E10 /* PerformanceTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -157,52 +260,166 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5A149285246EF209006E3DE7 /* Headers */ = {
+		5A59DBA42496428E00202E10 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A14929B246EF20A006E3DE7 /* SwiftySynchronized.h in Headers */,
+				5A59DC262496433400202E10 /* SwiftySynchronized.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBC0249642AB00202E10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A59DC36249645CC00202E10 /* SwiftySynchronized.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBDC249642BF00202E10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A59DC422496467D00202E10 /* SwiftySynchronized.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBF8249642CF00202E10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A59DC4E249646C700202E10 /* SwiftySynchronized.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5A149289246EF209006E3DE7 /* SwiftySynchronized */ = {
+		5A59DBA82496428E00202E10 /* SwiftySynchronized iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A14929E246EF20A006E3DE7 /* Build configuration list for PBXNativeTarget "SwiftySynchronized" */;
+			buildConfigurationList = 5A59DBBA2496428E00202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized iOS" */;
 			buildPhases = (
-				5A149285246EF209006E3DE7 /* Headers */,
-				5A149286246EF209006E3DE7 /* Sources */,
-				5A149287246EF209006E3DE7 /* Frameworks */,
-				5A149288246EF209006E3DE7 /* Resources */,
+				5A59DBA42496428E00202E10 /* Headers */,
+				5A59DBA52496428E00202E10 /* Sources */,
+				5A59DBA62496428E00202E10 /* Frameworks */,
+				5A59DBA72496428E00202E10 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftySynchronized;
-			productName = SwiftySynchronized;
-			productReference = 5A14928A246EF20A006E3DE7 /* SwiftySynchronized.framework */;
+			name = "SwiftySynchronized iOS";
+			productName = "SwiftySynchronized iOS";
+			productReference = 5A59DBA92496428E00202E10 /* SwiftySynchronized.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5A149292246EF20A006E3DE7 /* SwiftySynchronizedTests */ = {
+		5A59DBB02496428E00202E10 /* SwiftySynchronized iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A1492A1246EF20A006E3DE7 /* Build configuration list for PBXNativeTarget "SwiftySynchronizedTests" */;
+			buildConfigurationList = 5A59DBBD2496428E00202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized iOSTests" */;
 			buildPhases = (
-				5A14928F246EF20A006E3DE7 /* Sources */,
-				5A149290246EF20A006E3DE7 /* Frameworks */,
-				5A149291246EF20A006E3DE7 /* Resources */,
+				5A59DBAD2496428E00202E10 /* Sources */,
+				5A59DBAE2496428E00202E10 /* Frameworks */,
+				5A59DBAF2496428E00202E10 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5A149296246EF20A006E3DE7 /* PBXTargetDependency */,
+				5A59DBB42496428E00202E10 /* PBXTargetDependency */,
 			);
-			name = SwiftySynchronizedTests;
-			productName = SwiftySynchronizedTests;
-			productReference = 5A149293246EF20A006E3DE7 /* SwiftySynchronizedTests.xctest */;
+			name = "SwiftySynchronized iOSTests";
+			productName = "SwiftySynchronized iOSTests";
+			productReference = 5A59DBB12496428E00202E10 /* SwiftySynchronized iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A59DBC4249642AB00202E10 /* SwiftySynchronized macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A59DBD6249642AB00202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized macOS" */;
+			buildPhases = (
+				5A59DBC0249642AB00202E10 /* Headers */,
+				5A59DBC1249642AB00202E10 /* Sources */,
+				5A59DBC2249642AB00202E10 /* Frameworks */,
+				5A59DBC3249642AB00202E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftySynchronized macOS";
+			productName = "SwiftySynchronized macOS";
+			productReference = 5A59DBC5249642AB00202E10 /* SwiftySynchronized.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A59DBCC249642AB00202E10 /* SwiftySynchronized macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A59DBD9249642AB00202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized macOSTests" */;
+			buildPhases = (
+				5A59DBC9249642AB00202E10 /* Sources */,
+				5A59DBCA249642AB00202E10 /* Frameworks */,
+				5A59DBCB249642AB00202E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A59DBD0249642AB00202E10 /* PBXTargetDependency */,
+			);
+			name = "SwiftySynchronized macOSTests";
+			productName = "SwiftySynchronized macOSTests";
+			productReference = 5A59DBCD249642AB00202E10 /* SwiftySynchronized macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A59DBE0249642BF00202E10 /* SwiftySynchronized tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A59DBF2249642C000202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized tvOS" */;
+			buildPhases = (
+				5A59DBDC249642BF00202E10 /* Headers */,
+				5A59DBDD249642BF00202E10 /* Sources */,
+				5A59DBDE249642BF00202E10 /* Frameworks */,
+				5A59DBDF249642BF00202E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftySynchronized tvOS";
+			productName = "SwiftySynchronized tvOS";
+			productReference = 5A59DBE1249642BF00202E10 /* SwiftySynchronized.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A59DBE8249642C000202E10 /* SwiftySynchronized tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A59DBF5249642C000202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized tvOSTests" */;
+			buildPhases = (
+				5A59DBE5249642C000202E10 /* Sources */,
+				5A59DBE6249642C000202E10 /* Frameworks */,
+				5A59DBE7249642C000202E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A59DBEC249642C000202E10 /* PBXTargetDependency */,
+			);
+			name = "SwiftySynchronized tvOSTests";
+			productName = "SwiftySynchronized tvOSTests";
+			productReference = 5A59DBE9249642C000202E10 /* SwiftySynchronized tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A59DBFC249642CF00202E10 /* SwiftySynchronized watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A59DC02249642CF00202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized watchOS" */;
+			buildPhases = (
+				5A59DBF8249642CF00202E10 /* Headers */,
+				5A59DBF9249642CF00202E10 /* Sources */,
+				5A59DBFA249642CF00202E10 /* Frameworks */,
+				5A59DBFB249642CF00202E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftySynchronized watchOS";
+			productName = "SwiftySynchronized watchOS";
+			productReference = 5A59DBFD249642CF00202E10 /* SwiftySynchronized.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -210,16 +427,30 @@
 		5A149281246EF209006E3DE7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Никита Васильев";
 				TargetAttributes = {
-					5A149289246EF209006E3DE7 = {
-						CreatedOnToolsVersion = 11.4.1;
-						LastSwiftMigration = 1140;
+					5A59DBA82496428E00202E10 = {
+						CreatedOnToolsVersion = 11.5;
 					};
-					5A149292246EF20A006E3DE7 = {
-						CreatedOnToolsVersion = 11.4.1;
+					5A59DBB02496428E00202E10 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					5A59DBC4249642AB00202E10 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					5A59DBCC249642AB00202E10 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					5A59DBE0249642BF00202E10 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					5A59DBE8249642C000202E10 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					5A59DBFC249642CF00202E10 = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
@@ -236,21 +467,61 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A149289246EF209006E3DE7 /* SwiftySynchronized */,
-				5A149292246EF20A006E3DE7 /* SwiftySynchronizedTests */,
+				5A59DBA82496428E00202E10 /* SwiftySynchronized iOS */,
+				5A59DBB02496428E00202E10 /* SwiftySynchronized iOSTests */,
+				5A59DBC4249642AB00202E10 /* SwiftySynchronized macOS */,
+				5A59DBCC249642AB00202E10 /* SwiftySynchronized macOSTests */,
+				5A59DBE0249642BF00202E10 /* SwiftySynchronized tvOS */,
+				5A59DBE8249642C000202E10 /* SwiftySynchronized tvOSTests */,
+				5A59DBFC249642CF00202E10 /* SwiftySynchronized watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5A149288246EF209006E3DE7 /* Resources */ = {
+		5A59DBA72496428E00202E10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A149291246EF20A006E3DE7 /* Resources */ = {
+		5A59DBAF2496428E00202E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBC3249642AB00202E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBCB249642AB00202E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBDF249642BF00202E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBE7249642C000202E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBFB249642CF00202E10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,40 +531,122 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5A149286246EF209006E3DE7 /* Sources */ = {
+		5A59DBA52496428E00202E10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AAE386224784D4200C9A0E0 /* SpinLock.swift in Sources */,
-				5A1492A5246EF25A006E3DE7 /* Synchronized.swift in Sources */,
-				5AAE386424784DC300C9A0E0 /* ReadWriteLock.swift in Sources */,
-				5A1492A9246EF390006E3DE7 /* Locable.swift in Sources */,
-				5AAE386024784CB100C9A0E0 /* NSLock+.swift in Sources */,
-				5AC10D1A248A810D00132EB4 /* MutexLock.swift in Sources */,
-				5AAE385A2478476C00C9A0E0 /* DispatchSemaphore+.swift in Sources */,
-				5AC10D1E248A92D500132EB4 /* UnfairLock.swift in Sources */,
-				5AAE386624784FE400C9A0E0 /* RWQueue.swift in Sources */,
-				5A1492AB246EF3B9006E3DE7 /* Synchronizable.swift in Sources */,
-				5AAE3868247850A500C9A0E0 /* DispatchQueue.swift in Sources */,
+				5A59DC1F2496433400202E10 /* SpinLock.swift in Sources */,
+				5A59DC212496433400202E10 /* RWQueue.swift in Sources */,
+				5A59DC242496433400202E10 /* Locable.swift in Sources */,
+				5A59DC222496433400202E10 /* DispatchSemaphore+.swift in Sources */,
+				5A59DC1C2496433400202E10 /* ReadWriteLock.swift in Sources */,
+				5A59DC1B2496433400202E10 /* UnfairLock.swift in Sources */,
+				5A59DC232496433400202E10 /* Synchronized.swift in Sources */,
+				5A59DC252496433400202E10 /* Synchronizable.swift in Sources */,
+				5A59DC1E2496433400202E10 /* MutexLock.swift in Sources */,
+				5A59DC1D2496433400202E10 /* NSLock+.swift in Sources */,
+				5A59DC202496433400202E10 /* DispatchQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A14928F246EF20A006E3DE7 /* Sources */ = {
+		5A59DBAD2496428E00202E10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AC10D1C248A8B6E00132EB4 /* PerformanceTests.swift in Sources */,
-				5A149299246EF20A006E3DE7 /* SwiftySynchronizedTests.swift in Sources */,
+				5A59DC4F249647B300202E10 /* SwiftySynchronizedTests.swift in Sources */,
+				5A59DC50249647B300202E10 /* PerformanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBC1249642AB00202E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A59DC2B249645C600202E10 /* UnfairLock.swift in Sources */,
+				5A59DC2C249645C600202E10 /* ReadWriteLock.swift in Sources */,
+				5A59DC2D249645C600202E10 /* NSLock+.swift in Sources */,
+				5A59DC2E249645C600202E10 /* MutexLock.swift in Sources */,
+				5A59DC2F249645C600202E10 /* SpinLock.swift in Sources */,
+				5A59DC30249645C600202E10 /* DispatchQueue.swift in Sources */,
+				5A59DC31249645C600202E10 /* RWQueue.swift in Sources */,
+				5A59DC32249645C600202E10 /* DispatchSemaphore+.swift in Sources */,
+				5A59DC33249645C600202E10 /* Synchronized.swift in Sources */,
+				5A59DC34249645C600202E10 /* Locable.swift in Sources */,
+				5A59DC35249645C600202E10 /* Synchronizable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBC9249642AB00202E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A59DC51249647BD00202E10 /* SwiftySynchronizedTests.swift in Sources */,
+				5A59DC52249647BD00202E10 /* PerformanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBDD249642BF00202E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A59DC372496467800202E10 /* UnfairLock.swift in Sources */,
+				5A59DC382496467800202E10 /* ReadWriteLock.swift in Sources */,
+				5A59DC392496467800202E10 /* NSLock+.swift in Sources */,
+				5A59DC3A2496467800202E10 /* MutexLock.swift in Sources */,
+				5A59DC3B2496467800202E10 /* SpinLock.swift in Sources */,
+				5A59DC3C2496467800202E10 /* DispatchQueue.swift in Sources */,
+				5A59DC3D2496467800202E10 /* RWQueue.swift in Sources */,
+				5A59DC3E2496467800202E10 /* DispatchSemaphore+.swift in Sources */,
+				5A59DC3F2496467800202E10 /* Synchronized.swift in Sources */,
+				5A59DC402496467800202E10 /* Locable.swift in Sources */,
+				5A59DC412496467800202E10 /* Synchronizable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBE5249642C000202E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A59DC53249647C400202E10 /* SwiftySynchronizedTests.swift in Sources */,
+				5A59DC54249647C400202E10 /* PerformanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A59DBF9249642CF00202E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A59DC43249646C200202E10 /* UnfairLock.swift in Sources */,
+				5A59DC44249646C200202E10 /* ReadWriteLock.swift in Sources */,
+				5A59DC45249646C200202E10 /* NSLock+.swift in Sources */,
+				5A59DC46249646C200202E10 /* MutexLock.swift in Sources */,
+				5A59DC47249646C200202E10 /* SpinLock.swift in Sources */,
+				5A59DC48249646C200202E10 /* DispatchQueue.swift in Sources */,
+				5A59DC49249646C200202E10 /* RWQueue.swift in Sources */,
+				5A59DC4A249646C200202E10 /* DispatchSemaphore+.swift in Sources */,
+				5A59DC4B249646C200202E10 /* Synchronized.swift in Sources */,
+				5A59DC4C249646C200202E10 /* Locable.swift in Sources */,
+				5A59DC4D249646C200202E10 /* Synchronizable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5A149296246EF20A006E3DE7 /* PBXTargetDependency */ = {
+		5A59DBB42496428E00202E10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5A149289246EF209006E3DE7 /* SwiftySynchronized */;
-			targetProxy = 5A149295246EF20A006E3DE7 /* PBXContainerItemProxy */;
+			target = 5A59DBA82496428E00202E10 /* SwiftySynchronized iOS */;
+			targetProxy = 5A59DBB32496428E00202E10 /* PBXContainerItemProxy */;
+		};
+		5A59DBD0249642AB00202E10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A59DBC4249642AB00202E10 /* SwiftySynchronized macOS */;
+			targetProxy = 5A59DBCF249642AB00202E10 /* PBXContainerItemProxy */;
+		};
+		5A59DBEC249642C000202E10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A59DBE0249642BF00202E10 /* SwiftySynchronized tvOS */;
+			targetProxy = 5A59DBEB249642C000202E10 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -418,94 +771,337 @@
 			};
 			name = Release;
 		};
-		5A14929F246EF20A006E3DE7 /* Debug */ = {
+		5A59DBBB2496428E00202E10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A8WE5LL2GU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftySynchronized/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.SwiftySynchronized;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-iOS";
+				PRODUCT_NAME = SwiftySynchronized;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		5A1492A0246EF20A006E3DE7 /* Release */ = {
+		5A59DBBC2496428E00202E10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A8WE5LL2GU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftySynchronized/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.SwiftySynchronized;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-iOS";
+				PRODUCT_NAME = SwiftySynchronized;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		5A1492A2246EF20A006E3DE7 /* Debug */ = {
+		5A59DBBE2496428E00202E10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8WE5LL2GU;
-				INFOPLIST_FILE = SwiftySynchronizedTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.SwiftySynchronizedTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		5A1492A3246EF20A006E3DE7 /* Release */ = {
+		5A59DBBF2496428E00202E10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8WE5LL2GU;
-				INFOPLIST_FILE = SwiftySynchronizedTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikitavasilev.SwiftySynchronizedTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A59DBD7249642AB00202E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-macOS";
+				PRODUCT_NAME = SwiftySynchronized;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5A59DBD8249642AB00202E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-macOS";
+				PRODUCT_NAME = SwiftySynchronized;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5A59DBDA249642AB00202E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5A59DBDB249642AB00202E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5A59DBF3249642C000202E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-tvOS";
+				PRODUCT_NAME = SwiftySynchronized;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		5A59DBF4249642C000202E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-tvOS";
+				PRODUCT_NAME = SwiftySynchronized;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		5A59DBF6249642C000202E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Debug;
+		};
+		5A59DBF7249642C000202E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Release;
+		};
+		5A59DC03249642CF00202E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-watchOS";
+				PRODUCT_NAME = SwiftySynchronized;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		5A59DC04249642CF00202E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A8WE5LL2GU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikitavasilev.SwiftySynchronized-watchOS";
+				PRODUCT_NAME = SwiftySynchronized;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -521,20 +1117,65 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A14929E246EF20A006E3DE7 /* Build configuration list for PBXNativeTarget "SwiftySynchronized" */ = {
+		5A59DBBA2496428E00202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A14929F246EF20A006E3DE7 /* Debug */,
-				5A1492A0246EF20A006E3DE7 /* Release */,
+				5A59DBBB2496428E00202E10 /* Debug */,
+				5A59DBBC2496428E00202E10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A1492A1246EF20A006E3DE7 /* Build configuration list for PBXNativeTarget "SwiftySynchronizedTests" */ = {
+		5A59DBBD2496428E00202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A1492A2246EF20A006E3DE7 /* Debug */,
-				5A1492A3246EF20A006E3DE7 /* Release */,
+				5A59DBBE2496428E00202E10 /* Debug */,
+				5A59DBBF2496428E00202E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A59DBD6249642AB00202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A59DBD7249642AB00202E10 /* Debug */,
+				5A59DBD8249642AB00202E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A59DBD9249642AB00202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A59DBDA249642AB00202E10 /* Debug */,
+				5A59DBDB249642AB00202E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A59DBF2249642C000202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A59DBF3249642C000202E10 /* Debug */,
+				5A59DBF4249642C000202E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A59DBF5249642C000202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A59DBF6249642C000202E10 /* Debug */,
+				5A59DBF7249642C000202E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A59DC02249642CF00202E10 /* Build configuration list for PBXNativeTarget "SwiftySynchronized watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A59DC03249642CF00202E10 /* Debug */,
+				5A59DC04249642CF00202E10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
