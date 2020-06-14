@@ -202,7 +202,8 @@
 				5A59DC142496433400202E10 /* SwiftySynchronized.h */,
 				5A59DC152496433400202E10 /* Info.plist */,
 			);
-			path = Source;
+			name = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		5A59DC062496433400202E10 /* Classes */ = {
